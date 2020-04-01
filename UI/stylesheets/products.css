@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Bellota;
+}
+body{
+    background: #ffbb00;
+
+}
+.card{
+width:360px ;
+background: #36ff04dc ;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 50%);
+ 
+
+}
+
+.top-section{
+    height:310px ;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(to right, #a80202d7, #a53bd68f);
+
+}
+
+#image-container{
+    width: 360px;
+    height: 240px;
+
+}
+
+.navi{
+    text-align: center;
+}
