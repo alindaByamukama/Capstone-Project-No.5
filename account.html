@@ -9,29 +9,22 @@
   <link href="https://fonts.googleapis.com/css?family=Bellota|Calligraffitti&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
 
-
-  <title>Account</title>
+  <title>EDU Online Account</title>
 </head>
 <body>
+
     <header>
   EDU Online Store.
-</header>
-<ul>
-    <li><a>Home</a></li>
+</header> 
+<h3>Login Or Create Your EDU Online Account<br> OR</h3>
 
-    <li><a>Products</a></li>
-    <ul>
-        <li><a>Buy Produce</a></li>
-        <li><a>Sell Produce</a>
-    </ul>
-
-    <li><a>About Us</a></li>
-    <ul>
-        <li><a>Contacts</a></li>
-        <li><a></a>
-    </ul>
-    <li><a>Account</a></li>
-</ul>
+<div class='menu-container'>
+    <div class='menu'>
+      <div class="link">
+          <div class='homebtn'><a href="welcome.html"><h3> Return Home </h3></a></div>
+      </div>
+    </div>
+  </div>
   
   </div>
 <div class="background">
@@ -42,42 +35,24 @@
 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
 <button type="button" class="toggle-btn" onclick="register()" >Sign Up</button>
 </div>
-<form id= "login" class="input-group">
-    <input type="text" class="input-field" placeholder="User ID" required>
-    <input type="text" class="input-field" placeholder="Enter Password" required>
+<form onsubmit="return validate()" id= "login" action="welcome.html" class="input-group">
+    <input id="user" type="text" class="input-field" placeholder="User ID" required>
+    <input id="pass" type="password" class="input-field" placeholder="Enter Password" required>
     <input type="checkbox" class="check-box"><span>Remember Password</span>
     <button type="submit" class="submit-btn" >Login</button></form>
 
-    <form id ="register" class="input-group">
-        <input type="text" class="input-field" placeholder="User ID" required>
-        <input type="email" class="input-field" placeholder="Email ID" required>
-        <input type="text" class="input-field" placeholder="Enter Password" required>
+    <form onsubmit="return verify()" id ="register" action="success.html" class="input-group">
+        <input id="fname" type="text" class="input-field" placeholder="Full Name" required>
+        <input id="dob" type="date" class="input-field" placeholder="Date of Birth" required>
+        <input id="mail" type="email" class="input-field" placeholder="Email ID" required>
+        <input id="pass" type="text" class="input-field" placeholder="Enter Password" required>
         <input type="checkbox" class="check-box"><span>I agree to the terms and conditons</span>
         <button type="submit" class="submit-btn" >Get Started</button>
 
 </form>
 </div>
 
-<script>
-var x= document.getElementById("login")
-var y= document.getElementById("register")
-var z= document.getElementById("btn")
-
-function register(){
-    x.style.left="-400px"
-    y.style.left="50px"
-    z.style.left="110px"
-
-}
-function login(){
-    x.style.left="50px"
-    y.style.left="450px"
-    z.style.left="0px"
-
-}
-
-    
-</script>
+<script src= "account.js"></script>
 
 </body>
 </html>
