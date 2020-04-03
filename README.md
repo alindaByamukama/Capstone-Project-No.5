@@ -7,7 +7,7 @@
 ## Before you Start,
 Ensure that your pc, if running Windows, has git bash installed to 
 be able access the terminal which is available by default on linux
-and MacOS
+and MacOS.
 
 ## How to install
 #### Clone or download this repository.
