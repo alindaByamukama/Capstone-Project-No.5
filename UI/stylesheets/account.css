@@ -1,19 +1,25 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Bellota, sans-serif;
 }
 header{
     text-align: center;
     font-size: 50px;
     font-weight: 100;
-    color: black;
+    color: rgba(0, 20, 77, 0.76);
     text-transform: capitalize;
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
+h3{
+    background:linear-gradient(to right, #62d404f1, #a53bd68f);
+    text-align: center;
+    color: #850202f1 ;
+}
+
 header:hover{
     font-size: 49.5px;
     border-radius: 6px;
@@ -24,7 +30,7 @@ cursor: pointer;
 .ting{
     height: 100%;
     width : 100%;
-background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/images1/wood.jpg);
+background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images2/wood.jpg);
 background-position: center;
 background-size: cover;
 position: absolute;
@@ -33,7 +39,7 @@ background-attachment: fixed;
 
 .form-box{
     width: 380px;
-    height: 480px;
+    height: 485px;
     position: relative;
     background: #fff;
     margin: 6% auto;
@@ -80,6 +86,7 @@ background-attachment: fixed;
     position:absolute ;
     width: 280px;
     transition: 0.5s;
+
 }
 
 .input-field{
@@ -92,6 +99,7 @@ border-right: 0;
 border-bottom: 1px solid #999;
 outline: none;
 background: transparent;
+
 }
 .submit-btn{
     margin: auto;
@@ -105,12 +113,15 @@ background: transparent;
     cursor: pointer;
     display: block;
     border: 0;
-    height: 50%;
-    
+    height: 30%;
+}
+.submit-btn:hover{
+opacity: 0.7;
+
 }
 
 .check-box{
-    margin: 30px 10px 30px 0;
+ margin: 30px 10px 30px 0;
 margin-top: 1%;
 }
 span{
@@ -125,5 +136,9 @@ span{
 #register{
     left: 450px;
 }
+footer{
+    
+    background:linear-gradient(to right, #d44604f3, #a53bd68f);
 
+}
 
