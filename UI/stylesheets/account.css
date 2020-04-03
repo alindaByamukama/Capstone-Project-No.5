@@ -12,12 +12,13 @@ header{
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     border-radius: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    height: 35px;
 }
 h3{
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     text-align: center;
     color: #850202f1 ;
+
 }
 
 header:hover{
@@ -26,6 +27,50 @@ header:hover{
 transition: 0.25s;
 cursor: pointer;
 }
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background:linear-gradient(to right, #62d404f1, #a53bd68f);
+    left: 400%;
+height: 20px;
+
+  }
+  
+  .menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:30px #0f0b0969;
+
+  }
+
+
+  .home-btn {
+    color: whitesmoke;
+    background:linear-gradient(to right, #d44604f3, #7920a18f);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+margin-left: 90%;
+margin-top: -3%;
+
+}
+
+  .home-btn:hover {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 18px;
+    box-shadow: 5px 10px 18px #ABD904;
+    transition: 0.25s;
+    cursor: pointer;
+  }
 
 .ting{
     height: 100%;
@@ -113,10 +158,11 @@ background: transparent;
     cursor: pointer;
     display: block;
     border: 0;
-    height: 30%;
+    height: 20%;
 }
 .submit-btn:hover{
-opacity: 0.7;
+opacity: 0.8;
+box-shadow: 5px 10px 18px #ABD904;
 
 }
 
@@ -139,6 +185,6 @@ span{
 footer{
     
     background:linear-gradient(to right, #d44604f3, #a53bd68f);
-
+text-align: center;
 }
 
