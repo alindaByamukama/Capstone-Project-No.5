@@ -3,60 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type ="text/css" href= "/Capstone-Project-No.5/UI/stylesheets/account.css"/>
+  <link rel="stylesheet" type ="text/css" href= "../stylesheets/account.css"/>
+
+  <!--font-familes-->
   <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Lobster+Two|Viaoda+Libre&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bellota|Calligraffitti&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Courgette&family=Lobster+Two:ital@1&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
 
   <title>EDU Online Account</title>
 </head>
-<body>
 
+<body>
+<!--header-->
     <header>
   EDU Online Store.
 </header> 
-
-<h3><br>Login Or Create Your EDU Online Account</h3>
+<h3>Login Or Create Your EDU Online Account<br></h3>
+<!--buttons and navigation-->
 <div class='menu-container'>
   <div class='menu-buttons'>
         
         <!-- signup/in links -->
-      <button type="button" class="home-btn" onclick="document.location = '/Capstone-Project-No.5/UI/index.html'">Home</button>
+      <button type="button" class="home-btn" onclick= "document.location = '/UI/index.html'">Home</button>
   </div>
 </div>
-
-
+  
+<!--form and body-->
 <div class="background">
+
     <div class = "ting">
+      
         <div class= "form-box">
+
 <div class="button-box">
     <div id="btn"></div>
 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
 <button type="button" class="toggle-btn" onclick="register()" >Sign Up</button>
 </div>
-<form onsubmit="return validate()" id= "login" action="index.html" class="input-group">
+<form onsubmit="return validate()" id= "login" action="/UI/templates/cart.html" class="input-group">
     <input id="user" type="text" class="input-field" placeholder="User ID" required>
     <input id="pass" type="password" class="input-field" placeholder="Enter Password" required>
     <input type="checkbox" class="check-box"><span>Remember Password</span>
-    <button type="submit" class="submit-btn" onclick="document.location = '/Capstone-Project-No.5/UI/templates/cart.html'">Login</button></form>
+    <button type="submit" class="submit-btn" >Login</button></form>
 
-    <form onsubmit="return verify()" id ="register" action="index.html" class="input-group">
+    <form onsubmit="return verify()" id ="register" action="/UI/index.html" class="input-group">
         <input id="fname" type="text" class="input-field" placeholder="Full Name" required>
         <input id="dob" type="date" class="input-field" placeholder="Date of Birth" required>
         <input id="mail" type="email" class="input-field" placeholder="Email ID" required>
         <input id="pass" type="text" class="input-field" placeholder="Enter Password" required>
         <input type="checkbox" class="check-box"><span>I agree to the terms and conditons</span>
-        <button type="submit" class="submit-btn" onclick="document.location = /Capstone-Project-No.5'/UI/templates/cart.html'">Get Started</button>
+        <button type="submit" class="submit-btn" >Get Started</button>
 
 </form>
+<!--footer-->
 </div>
-
-<div class="copyright">
-  <footer>&copy; 2020 EDU-Shop Online </footer></div>
-
+<div class="foot">
+<footer>&copy; 2020 EDU-Shop Online </footer>
+</div>
+</div>
+</div>
+<!--JavaScript-->
 <script src= "../script/account.js"></script>
-
 </body>
 </html>
 

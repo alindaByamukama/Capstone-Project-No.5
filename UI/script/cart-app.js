@@ -44,9 +44,9 @@ for(var i = 0; i < removeCartItemButtons.length; i++) {
 function purchaseClicked(event) {
     // window.confirm("Have you created an account with us?");
     if (confirm("Have you created an account with us?")) {
-        window.alert('Thank you for your purhase!');
+        window.alert('Thank you for your purchase!');
       } else {
-        window.location.replace('https://alindabyamukama.github.io/Capstone-Project-No.5/UI/templates/account.html');
+        window.location.replace('/UI/templates/account.html');
       }
     // alert('Thank you for your purchase!)
     var cartItems = document.getElementsByClassName('cart-items')[0]

@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Bellota, sans-serif;
 }
+
 header{
     text-align: center;
     font-size: 50px;
@@ -11,14 +12,13 @@ header{
     text-transform: capitalize;
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     border-radius: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 35px;
+    font-family: Comic Neue;
+    
 }
 h3{
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     text-align: center;
     color: #850202f1 ;
-
 }
 
 header:hover{
@@ -28,6 +28,16 @@ transition: 0.25s;
 cursor: pointer;
 }
 
+.ting{
+    height: 100%;
+    width : 100%;
+background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images2/wood.jpg);
+background-position: center;
+background-size: cover;
+position: absolute;
+background-attachment: fixed;
+}
+
 .menu-container {
     display: flex;
     justify-content: center;
@@ -35,7 +45,6 @@ cursor: pointer;
     background:linear-gradient(to right, #62d404f1, #a53bd68f);
     left: 400%;
 height: 20px;
-
   }
   
   .menu-buttons {
@@ -43,9 +52,7 @@ height: 20px;
     justify-content: space-around;
     width: 100%;
     box-shadow:30px #0f0b0969;
-
   }
-
 
   .home-btn {
     color: whitesmoke;
@@ -60,7 +67,6 @@ height: 20px;
     border: none;
 margin-left: 90%;
 margin-top: -3%;
-
 }
 
   .home-btn:hover {
@@ -72,16 +78,6 @@ margin-top: -3%;
     cursor: pointer;
   }
 
-.ting{
-    height: 100%;
-    width : 100%;
-background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../images2/wood.jpg);
-background-position: center;
-background-size: cover;
-position: absolute;
-background-attachment: fixed;
-}
-
 .form-box{
     width: 380px;
     height: 485px;
@@ -91,10 +87,9 @@ background-attachment: fixed;
     padding: 5px;
     border-radius: 40px;
     opacity: 0.8;
-    margin-top: 5%;
     box-shadow:0 0 20px 9px #216868b4;
     overflow: hidden;
-    
+    margin-top:3.8%;   
 }
 
 .button-box{
@@ -131,7 +126,6 @@ background-attachment: fixed;
     position:absolute ;
     width: 280px;
     transition: 0.5s;
-
 }
 
 .input-field{
@@ -147,24 +141,25 @@ background: transparent;
 
 }
 .submit-btn{
-    margin: auto;
-    padding: 10px, 30px;
-    position:absolute ;
-    width: 85%;
-    box-shadow:0 0 20px 9px #0f0b0915;
-    background:linear-gradient(to right, #d44604f3, #a53bd68f);
-    border-radius:30px ;
-    transition: 0.5s;
-    cursor: pointer;
-    display: block;
-    border: 0;
-    height: 20%;
-}
-.submit-btn:hover{
-opacity: 0.8;
-box-shadow: 5px 10px 18px #ABD904;
-
-}
+        margin: auto;
+        padding: 10px, 30px;
+        position:absolute ;
+        width: 85%;
+        box-shadow:0 0 20px 9px #0f0b0915;
+        background:linear-gradient(to right, #d44604f3, #a53bd68f);
+        border-radius:30px ;
+        transition: 0.5s;
+        cursor: pointer;
+        display: block;
+        border: 0;
+        height: 20%;
+        left: 12%;
+    }
+    .submit-btn:hover{
+    opacity: 0.8;
+    box-shadow: 5px 10px 18px #ABD904;
+    
+    }
 
 .check-box{
  margin: 30px 10px 30px 0;
@@ -182,9 +177,24 @@ span{
 #register{
     left: 450px;
 }
-footer{
-    
+.foot{
+    height:30px;
     background:linear-gradient(to right, #d44604f3, #a53bd68f);
-text-align: center;
+    text-align: center;
+    margin-bottom: 0%;
 }
 
+@media (max-width:600px){
+    html{
+    font-size: auto;
+    line-height:1.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}     
+}
+  
+@media (max-width:600px){
+    .home-btn{
+    left: 200%;
+}
+}
