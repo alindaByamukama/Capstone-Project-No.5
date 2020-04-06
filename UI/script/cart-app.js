@@ -46,7 +46,7 @@ function purchaseClicked(event) {
     if (confirm("Have you created an account with us?")) {
         window.alert('Thank you for your purhase!');
       } else {
-        window.location.replace('http://127.0.0.1:5500/UI/templates/account.html');
+        window.location.replace('http://https://alindabyamukama.github.io/Capstone-Project-No.5/UI/templates/account.html');
       }
     // alert('Thank you for your purchase!)
     var cartItems = document.getElementsByClassName('cart-items')[0]
