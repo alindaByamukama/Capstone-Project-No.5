@@ -42,7 +42,13 @@ for(var i = 0; i < removeCartItemButtons.length; i++) {
 
 // the purchase button
 function purchaseClicked(event) {
-    alert('Thank you for your purchase!')
+    // window.confirm("Have you created an account with us?");
+    if (confirm("Have you created an account with us?")) {
+        window.alert('Thank you for your purhase!');
+      } else {
+        window.location.replace('http://127.0.0.1:5500/UI/templates/account.html');
+      }
+    // alert('Thank you for your purchase!)
     var cartItems = document.getElementsByClassName('cart-items')[0]
     // continues to execute while what is inside () is true
     while (cartItems.hasChildNodes()) {
