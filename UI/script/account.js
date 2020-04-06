@@ -29,6 +29,7 @@ var fnames = document.getElementById("fname")
        return false;
    }
    else{
+    alert("Login Successful! 👍️ ")
 true;   
    }
 }
@@ -56,7 +57,6 @@ else{
 }
 }
 
-
 function verify(){
 var maiil= document.getElementById("mail") 
 var dobb = document.getElementById("dob") 
@@ -68,8 +68,7 @@ var fnames = document.getElementById("fname")
        return false;
    }
    else{
+    alert("Account successfully created! 😊️ Thank you for joining us 🤝️")
 true;
    }
-}
-
-    
+}  

@@ -1,0 +1,135 @@
+html{
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Raleway;
+}
+
+body{
+    color: aqua;
+    margin: 0;
+    padding: 0%;
+    perspective:1px;
+    transform-style: preserve-3d;
+    height:100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background:#010326;
+    left: 400%;
+height: 80px;
+
+  }
+  
+  .menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow:30px #0f0b0969;
+    margin-top:-12%;
+    height: 2%;
+
+  }
+
+
+  .home-btn {
+    color: whitesmoke;
+    background:linear-gradient(to right, #d44604f3, #7920a18f);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+margin-left: 90%;
+margin-bottom: -15%;
+margin-top: 10.5%;
+height: -9px;
+}
+
+  .home-btn:hover {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 18px;
+    box-shadow: 5px 10px 18px #ABD904;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+
+header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(182, 248, 0);
+    text-transform: capitalize;
+    background:linear-gradient(to top, #740f0f, #bbbdd1c4);
+    border-radius: 5px;
+    font-family: Lobster Two;
+    position: relative;
+    box-sizing: border-box;
+    min-height:100vh;
+    width:100vw ;
+    transform-style: inherit;
+    padding: 30vw 0 5vw;
+
+}
+
+header h1{
+    margin-top: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header, header:before{
+    background: 50% 50% / cover;
+}
+
+header::before{
+    bottom:0;
+    content:"" ;
+    left:0 ;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url(../images2/table.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+.effect {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background:#010326;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: rgb(143, 216, 7);
+}
+footer{
+    color: aqua;
+    background:linear-gradient(to right, #d44604f3, #a53bd68f);
+    text-align: center;
+}
+
+@media (max-width:600px){
+    html{
+    font-size: 20px;
+    line-height:5.5rem;
+}     
+}
